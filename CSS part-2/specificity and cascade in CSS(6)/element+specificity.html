@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* specificity = 1 */
+        h1{  
+            color: antiquewhite
+        }
+        /* specificity  1+10 =11   element is also added to it*/
+        h1.red{
+            color: red;
+        }
+        /* specificity = 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* specificity = 10 */
+        .blue{
+            color: blue;  
+        }
+        /* specificity = 10 */
+        [data-x=a]{
+            color: aqua;  /* attribute selector applied  */
+        }
+
+    </style>
+</head>
+<body>
+     <h1 class="red yellow blue " data-x="a">This is the heading<h1>
+               
+    
+</body>
+</html>
+<!-- inline selector > id selector > class attribute selector > element selector > universal selector  -->
+
