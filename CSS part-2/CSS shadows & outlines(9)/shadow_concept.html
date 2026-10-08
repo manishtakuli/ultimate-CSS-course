@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows in css</title>
+</head>
+<style>
+    .box{
+        border: 2px solid black;
+        padding: 30px;
+        box-shadow: 5px 15px 6px;   /* box shadow  */ 
+    }
+    .text-shadow{
+        text-shadow: 5px 5px 5px #ededed;  /* text shadow  */
+        outline: 2px solid yellow;  /* outline , does not take space */
+        outline-offset: 2px; /* changes the size of outline  */
+        border: 3px solid blue;
+        border-radius: 5px; /* curves the edges of border          */
+    }
+</style>
+<body>
+    <div class="box">
+        hello im a large box
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis eius quo.
+    </p>
+
+</body>
+</html>
