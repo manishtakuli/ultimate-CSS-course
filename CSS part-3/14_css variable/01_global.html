@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css variables</title>
+</head>
+<style>
+    :root{    /* variable declared */
+        --color-- : pink;
+        --seccolor : yellow;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        display: flex;
+    }
+    .ul li{
+        list-style: none;
+        padding: 30px;
+    }
+    .nav{
+        background-color: var(--color--); /* color appplied through variable declared as root */
+    }
+    .container{
+        background-color:var(--seccolor); /* color appplied through variable declared as root */
+    }
+    
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>list</li>
+            <li>play</li>
+        </ul>
+        
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo repellendus praesentium minus veritatis saepe ea, beatae quibusdam. Voluptatem non optio perspiciatis ratione.
+        </div>
+    </div>
+</body>
+</html>
