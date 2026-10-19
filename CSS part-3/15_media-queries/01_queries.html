@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+</head>
+<style>
+    body{
+        background-color: yellow;
+    }
+    @media only  screen and  (max_width : 455px){     /* syntax: media not|only mediatype and (expression); */
+        body{
+            background-color: blue;
+        }   
+    }
+    .box{
+        width:344px;
+        height:344px;
+        background-color: black;
+        padding: 2px;
+        margin:2px;
+    }
+</style>
+<body>
+    <div>
+        i am the yellow men :
+    </div>
+    
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+</html>
